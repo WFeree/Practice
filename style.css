@@ -67,6 +67,8 @@ nav{
 }
 #nav-login:hover{
     font-style: normal;
+    background-color: var(--green);
+    color: white;
 }
 header{
     max-width: 100%;
@@ -133,9 +135,6 @@ header{
 .search-type:hover::after{
     transform: scale(1,1);
 }
-
-
-
 .scroll-indicator{
     margin-top: 8vh;
     text-align: center;
