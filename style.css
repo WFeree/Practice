@@ -42,6 +42,10 @@ nav{
     font-weight: 600;
     cursor: pointer;
 }
+.nav-links select.nav-link{
+    border: 0;
+    outline: 0;
+}
 .active{
     color: black;
     font-weight: 600;
@@ -75,7 +79,7 @@ header{
     margin: 0 1%;
     background-image: url(src/letöltés.png);
     background-size: cover;
-    background-position: -55%;
+    background-position: 0;
     height: 42vw;
     display: flex;
     flex-direction: column;
@@ -83,7 +87,7 @@ header{
     align-items: center;
     border-radius: 30px;
 }
-.header-title{
+h1{
     font-size: 8rem;
     line-height: 1;
     text-align: center;
@@ -101,6 +105,7 @@ header{
     width: 800px;
     padding: 1.5rem;
     border-radius: 15px;
+    box-shadow: 12px 16px 22px 5px rgba(0,0,0,0.1);
 }
 .searchbox-type-wrapper{
     /* display: grid;
@@ -141,7 +146,6 @@ header{
 }
 .scroll-vector{
     animation: upDown 3s linear infinite;
-
 }
 i.fa-solid{
     margin-right: 5px;
@@ -153,4 +157,58 @@ i.fa-solid{
     50%{
         transform: translateY(+30px);
     }
+}
+.spread{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    margin: 1.5% 3% 1.5% 1.5%;
+    align-items: center;
+}
+h2{
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.spread-subtext{
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #666666;
+}
+.big-btn{
+    padding: 1rem 1rem;
+    background-color: var(--green);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: .1s;
+}
+.big-btn:hover{
+    cursor: pointer;
+    background-color: #3a975e;
+}
+.spread-right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+.data{
+    width: 140px;
+}
+.data-main{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.data-subtext{
+    color: #666666;
+}
+hr{
+    width: 95%;
+    margin: 1.5% 3% 1.5% 1.5%;
+    border: 1px solid #d3d3d3;
 }
