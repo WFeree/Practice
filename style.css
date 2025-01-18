@@ -3,6 +3,7 @@
     --blue: #0973a5;
     --green: #40ad6a;
     --background-white: #fefefe;
+    --margin: 1.5% 3% 1.5% 1.5%;
 }
 *{
     margin: 0;
@@ -15,9 +16,10 @@ body{
     background-color: var(--background-white);
     font-family: 'Poppins';
     user-select: none;
+    scroll-behavior: smooth;
 }
 nav{
-    margin: 1.5% 3% 1.5% 1.5%;
+    margin: var(--margin);
     display: grid;
     grid-template-columns: 2fr 1.5fr 2fr;
     justify-items: center;
@@ -108,8 +110,6 @@ h1{
     box-shadow: 12px 16px 22px 5px rgba(0,0,0,0.1);
 }
 .searchbox-type-wrapper{
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr); */
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -161,7 +161,7 @@ i.fa-solid{
 .spread{
     display: grid;
     grid-template-columns: 5fr 5fr;
-    margin: 1.5% 3% 1.5% 1.5%;
+    margin: 5% 3% 5% 1.5%;
     align-items: center;
 }
 h2{
@@ -171,6 +171,7 @@ h2{
 }
 .spread-subtext{
     margin: 1rem 0;
+    padding: 0 8rem 0 0;
     line-height: 1.5;
     color: #666666;
 }
@@ -204,11 +205,61 @@ h2{
     font-weight: 700;
     font-size: 3rem;
 }
-.data-subtext{
+.data-subtext,.li-subtext{
     color: #666666;
 }
 hr{
     width: 95%;
-    margin: 1.5% 3% 1.5% 1.5%;
-    border: 1px solid #d3d3d3;
+    margin: var(--margin);
+    border: 1px solid #dddddd;
+}
+.benefits{
+    margin: 5% 3% 5% 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits-ol{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+.benefits-li{
+    padding: 3rem;
+}
+.li-number{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: .3rem ;
+}
+.imageDivider{
+    max-width: 100%;
+    height: 75vh;
+    margin: 0 1%;
+    background-image: url(src/jeff-brown-xOj6_Ha1_R8-unsplash.jpg);
+    border-radius: 30px;
+    background-size: cover;
+    background-position: -30;
+}
+.marquee{
+    height: 10vw;
+}
+.recommended{
+    margin: var(--margin);
+    display: grid;
+    grid-template-columns: repeat(2,5fr);
+}
+.st{
+    color: #666666;
+}
+.recom-btn{
+    width: 120px;
+    margin-top: 1rem;
 }
