@@ -250,6 +250,12 @@ h3{
 }
 .marquee{
     height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    height: fit-content;
 }
 .recommended{
     margin: var(--margin);
